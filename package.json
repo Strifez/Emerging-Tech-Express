@@ -1,6 +1,6 @@
 {
   "name": "express-website",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
@@ -14,5 +14,28 @@
     "morgan": "~1.7.0",
     "serve-favicon": "~2.3.0",
     "stylus": "0.54.5"
-  }
+  },
+
+  "engines": {
+    "node": ">=6.0.0",
+    "npm": ">=3.5.0"
+  },
+  "description": "server.js",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Strifez/Emerging-Tech-Express.git"
+  },
+  "keywords": [
+    "Nodejs",
+    "Express",
+    "JS"
+  ],
+  "author": "Jason Huang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Strifez/Emerging-Tech-Express/issues"
+  },
+  "homepage": "https://github.com/Strifez/Emerging-Tech-Express#readme"
 }
