@@ -15,8 +15,22 @@ router.get('/', (req, res, next) => {
 // GET about page
 router.get('/about', (req, res) => {
   res.render('about', { 
-    title: 'about', 
+    title: 'About', 
     date: currentDate});
+});
+
+//GET project page
+router.get('/project', (req, res) => {
+  res.render('projects', {
+    title: 'Projects'
+  });
+});
+
+//GET service page
+router.get('/services', (req, res) => {
+  res.render('services', {
+    title: 'Services'
+  });
 });
 
 //GET contact page
@@ -25,5 +39,7 @@ router.get('/contact', (req, res) => {
     title: 'Contact'
   });
 });
+
+
 
 module.exports = router;
