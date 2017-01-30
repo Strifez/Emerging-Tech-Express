@@ -1,3 +1,4 @@
+//Include all of our middleware - internal and external modules
 let express = require('express');
 let path = require('path'); //part of node.js core
 let favicon = require('serve-favicon');

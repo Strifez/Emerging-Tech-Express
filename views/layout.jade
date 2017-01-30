@@ -2,8 +2,16 @@ doctype
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-    link(rel='stylesheet', href='/stylesheets/chunkfive-fontface.css')
+    //CSS
+    link(rel='stylesheet', href='/Content/content.app.css')
+    link(rel='stylesheet', href='/Content/chunkfive-fontface.css')
+    link(rel='stylesheet', href='/Scripts/lib/bootstrap/dist/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/Scripts/lib/bootstrap/dist/css/bootstrap-theme.min.css')
+   
+    //Scripts
+    script (src = "Scripts/lib/jquery/dist/jquery.min.js")
+    script (src = "Scripts/lib/bootstrap/dist/js/bootstrap.min.js")
+    script (src = "Scripts/app.js")
   body
     header
       nav
