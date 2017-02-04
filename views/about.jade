@@ -1,7 +1,10 @@
-extends layout
+extends ../public/Scripts/lib/jade-bootstrap/_bootstrap.jade
 
-block content
- h1  Morbi elementum, sapien sit amet vehicula tincidunt, lorem purus vehicula purus, ut tempor libero sem at orci.
+link(href="../public/Scripts/lib/jade-boostrap/css/carousel.css", rel="stylesheet")
+
+block body
+  include partials/header.jade
+  h1  Morbi elementum, sapien sit amet vehicula tincidunt, lorem purus vehicula purus, ut tempor libero sem at orci.
   section.css-table
     section.two-column
       section.cell
@@ -22,7 +25,7 @@ block content
         p Soccer Spirits (Mobile Game)
         <img src="Assets/images/ss_home.jpg" alt="Soccer Spirits" style="width:508px;height:285px;">
 
-  section.css-table
+    section.css-table
     section.three-column
       section.cell
         h3 Etiam lobortis

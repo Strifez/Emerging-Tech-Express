@@ -1,44 +1,29 @@
 doctype
 html(lang = 'en')
-  head
-    meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    title= title
-    //CSS
-    link(rel='stylesheet', href='/Content/content.app.css')
-    link(rel='stylesheet', href='/Content/chunkfive-fontface.css')
-    link(rel='stylesheet', href='/Scripts/lib/jade-bootstrap/css/carousel.css')
-   
-  body
-    header
-      nav
-        ul
-          li 
-            a(href="/") Home
-          li 
-            a(href="/about") About
-          li
-            a(href="/project") Projects
-          li
-            a(href="/services") Services
-          li 
-            a(href="/contact") Contact
-    section#wrapper
-        block content
-        footer 
-          section.css-table
-            section.four-column
-              section.cell
-                p Mauris porttitor <br />felis eu leo aliquet<br /> ac rutrum odio aliquet
-              section.cell
-                p Mauris porttitor <br />felis eu leo aliquet<br /> ac rutrum odio aliquet
-              section.cell
-                p Mauris porttitor <br />felis eu leo aliquet<br /> ac rutrum odio aliquet
-              section.cell
-                p Mauris porttitor <br />felis eu leo aliquet<br /> ac rutrum odio aliquet
+head
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		title= title
+		//CSS
+		link(rel='stylesheet', href='/Content/content.app.css')
+		link(rel='stylesheet', href='/Content/chunkfive-fontface.css')
+		link(rel='stylesheet', href='/Scripts/lib/jade-bootstrap/css/carousel.css')
+		section#wrapper
+				block content
+				footer 
+					section.css-table
+						section.four-column
+							section.cell
+								p Mauris porttitor <br />felis eu leo aliquet<br /> ac rutrum odio aliquet
+							section.cell
+								p Mauris porttitor <br />felis eu leo aliquet<br /> ac rutrum odio aliquet
+							section.cell
+								p Mauris porttitor <br />felis eu leo aliquet<br /> ac rutrum odio aliquet
+							section.cell
+								p Mauris porttitor <br />felis eu leo aliquet<br /> ac rutrum odio aliquet
 
-      //Scripts
-      script (src = "Scripts/lib/jquery/dist/jquery.min.js")
-      script (src = "Scripts/lib/jade-bootstrap/components/carousel.jade")
-      script (src = "Scripts/lib/jade-bootstrap/layouts/carousel.jade")
-      script (src = "Scripts/app.js")
+			//Scripts
+			script (src = "Scripts/lib/jquery/dist/jquery.min.js")
+			script (src = "Scripts/lib/jade-bootstrap/components/carousel.jade")
+			script (src = "Scripts/lib/jade-bootstrap/layouts/carousel.jade")
+			script (src = "Scripts/app.js")
