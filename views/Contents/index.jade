@@ -7,15 +7,13 @@
 
 
 
-extends ../public/Scripts/lib/jade-bootstrap/_bootstrap.jade
-
-
+extends ../../public/Scripts/lib/jade-bootstrap/_bootstrap.jade
 
 append styles
 	// Custom styles for this template 
 	link(href="../public/Scripts/lib/jade-boostrap/css/carousel.css", rel="stylesheet")
 block body
-	include partials/header.jade
+	include ../partials/header.jade
 	// Carousel
 	// ==================================================
 	+carousel("myCarousel",[{image:"../Assets/images/boat-photo.jpg",h1:"Peaceful Place to Camp",p:"Note: If you're viewing this page via a codefile:///code URL, the 'next' and 'previous' Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.",button:{caption:"Sign up today",url:"#"}},{image:"../Assets/images/lake-photo.jpg",h1:"Lets Go Fishing!",p:"Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.",button:{caption:"Learn more",url:"#"}},	{image:"../Assets/images/snowflake.jpg",h1:"Snowflake",p:"Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.",button:{caption:"Browse gallery",url:"#"}}])
@@ -33,7 +31,7 @@ block body
 				p
 					a.btn.btn-default(href='#', role='button') View details »
 
-include partials/footer.jade
+include ../partials/footer.jade
 
 
 

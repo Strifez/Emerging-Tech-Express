@@ -7,35 +7,35 @@ currentDate = currentDate.toLocaleTimeString();
 
 /* GET home page. */
 router.get('/', (req, res, next) => {
-  res.render('index', { 
+  res.render('Contents/index', { 
     title: 'Home', 
     date: currentDate});
 });
 
 // GET about page
 router.get('/about', (req, res) => {
-  res.render('about', { 
+  res.render('Contents/about', { 
     title: 'About', 
     date: currentDate});
 });
 
 //GET project page
 router.get('/project', (req, res) => {
-  res.render('projects', {
+  res.render('Contents/projects', {
     title: 'Projects'
   });
 });
 
 //GET service page
 router.get('/services', (req, res) => {
-  res.render('services', {
+  res.render('Contents/services', {
     title: 'Services'
   });
 });
 
 //GET contact page
 router.get('/contact', (req, res) => {
-  res.render('contact', {
+  res.render('Contents/contact', {
     title: 'Contact'
   });
 });
