@@ -1,17 +1,14 @@
 doctype
-html
+html(lang = 'en')
   head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
     title= title
     //CSS
     link(rel='stylesheet', href='/Content/content.app.css')
     link(rel='stylesheet', href='/Content/chunkfive-fontface.css')
-    link(rel='stylesheet', href='/Scripts/lib/bootstrap/dist/css/bootstrap.min.css')
-    link(rel='stylesheet', href='/Scripts/lib/bootstrap/dist/css/bootstrap-theme.min.css')
+    link(rel='stylesheet', href='/Scripts/lib/jade-bootstrap/css/carousel.css')
    
-    //Scripts
-    script (src = "Scripts/lib/jquery/dist/jquery.min.js")
-    script (src = "Scripts/lib/bootstrap/dist/js/bootstrap.min.js")
-    script (src = "Scripts/app.js")
   body
     header
       nav
@@ -39,3 +36,9 @@ html
                 p Mauris porttitor <br />felis eu leo aliquet<br /> ac rutrum odio aliquet
               section.cell
                 p Mauris porttitor <br />felis eu leo aliquet<br /> ac rutrum odio aliquet
+
+      //Scripts
+      script (src = "Scripts/lib/jquery/dist/jquery.min.js")
+      script (src = "Scripts/lib/jade-bootstrap/components/carousel.jade")
+      script (src = "Scripts/lib/jade-bootstrap/layouts/carousel.jade")
+      script (src = "Scripts/app.js")
