@@ -12,11 +12,12 @@ extends ../../public/Scripts/lib/jade-bootstrap/_bootstrap.jade
 append styles
 	// Custom styles for this template 
 	link(href="../public/Scripts/lib/jade-boostrap/css/carousel.css", rel="stylesheet")
+	link(href='../public/Scripts/lib/jade-bootstrap/css/navbar.css', rel='stylesheet')
 block body
 	include ../partials/header.jade
 	// Carousel
 	// ==================================================
-	+carousel("myCarousel",[{image:"../Assets/images/boat-photo.jpg",h1:"Peaceful Place to Camp",p:"Note: If you're viewing this page via a codefile:///code URL, the 'next' and 'previous' Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.",button:{caption:"Sign up today",url:"#"}},{image:"../Assets/images/lake-photo.jpg",h1:"Lets Go Fishing!",p:"Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.",button:{caption:"Learn more",url:"#"}},	{image:"../Assets/images/snowflake.jpg",h1:"Snowflake",p:"Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.",button:{caption:"Browse gallery",url:"#"}}])
+	+carousel("myCarousel",[{image:"../Assets/images/boat-photo.jpg",h1:"Beautiful Places to go Camping",p:"Text",button:{caption:"Visit TRCA",url:"https://trca.ca/activities/camping/"}},{image:"../Assets/images/lake-photo.jpg",h1:"Lets Go Fishing!",p:"Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.",button:{caption:"Learn more",url:"#"}},	{image:"../Assets/images/snowflake.jpg",h1:"Snowflake",p:"Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.",button:{caption:"Browse gallery",url:"#"}}])
 	//  Marketing messaging and featurettes
 	//  ==================================================
 	// Wrap the rest of the page in another container to center all the content.
@@ -24,14 +25,13 @@ block body
 		// Three columns of text below the carousel
 		.row
 			.col-lg-4
-				img.img-circle(src='../images/marketing1.jpg', alt='Generic placeholder image', width='140', height='140')
-				h2 Heading
+				img.img-circle(src='../images/Sanic.png', alt='Jason', width='140', height='140')
+				h2 Welcome!!
+				p This is my personal site. 
 				p
-					| Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
-				p
-					a.btn.btn-default(href='#', role='button') View details »
+					a.btn.btn-default(href='/about', role='button') About Me! »
 
-include ../partials/footer.jade
+	include ../partials/footer.jade
 
 
 

@@ -6,6 +6,22 @@ let logger = require('morgan');
 let cookieParser = require('cookie-parser');
 let bodyParser = require('body-parser');
 
+//import "mongoose"
+let mongoose = require('mongoose');
+
+//URI
+//let URI = "mongodb://localhost/videogames";
+let URI = "mongodb://Jason:123456@ds011158.mlab.com:11158/videogames";
+
+mongoose.connect(URI,(err)=> {
+  if(err)
+  {
+    console.log("Error connecting to MONGO DB server" + err);
+  } else {
+    console.log("Connected to Mongo DB!");
+  }
+})
+
 let index = require('./routes/routes.index');
 //let users = require('./routes/routes.users');
 
