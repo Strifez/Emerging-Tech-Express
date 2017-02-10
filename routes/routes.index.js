@@ -1,3 +1,6 @@
+// Routes 
+// Jason Huang 
+// Routes file that links each page to a specifc URL
 let express = require('express');
 let router = express.Router();
 

@@ -1,7 +1,18 @@
+// Services
+// Jason Huang 
+// Services page in My Website, using bootstrap jumbotron
+
 extends ../../public/Scripts/lib/jade-bootstrap/_bootstrap.jade
 
 link(href="../public/Scripts/lib/jade-boostrap/css/carousel.css", rel="stylesheet")
 
 block body
-    include ../partials/header.jade
-    h1 Services
+	include ../partials/header.jade
+	.container
+		.header.clearfix
+			h3.text-muted Services
+		.jumbotron
+			h1 Current Services 
+			p.lead Currently No Services Offered
+		
+		include ../partials/footer.jade

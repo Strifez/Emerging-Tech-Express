@@ -1,18 +1,42 @@
+// Projects
+// Jason Huang 
+// Projects page in My Website, using bootstrap Carousel
 extends ../../public/Scripts/lib/jade-bootstrap/_bootstrap.jade
 
 link(href="../public/Scripts/lib/jade-boostrap/css/carousel.css", rel="stylesheet")
 
 block body
-    include ../partials/header.jade
-    h1 My Projects
-    h2 Currently involved!
+	include ../partials/header.jade
+	section.css-table
+		section.two-column
+			section.cell
+		// START THE FEATURETTES
+		hr.featurette-divider
+		.row.featurette
+			.col-md-7
+				h1 My Projects
+				h2.featurette-heading
+					| Currently Involved
+					span.text-muted  What-To-Cook
+				p.lead
+					| Using React and Redux to create a single webpage application for users to search recipes with ease. 	
+					| Type in ingredients and it will search and show recipes with those ingredients. Using spoontacular API.
+			.col-md-5
+				img.featurette-image.img-responsive.center-block(src='../Assets/images/what-to-cook.png', alt='RecipeApp', style="width:800px;height:400px")
+		hr.featurette-divider
+		.row.featurette
+			.col-md-7.col-md-push-5
+				h2.featurette-heading
+					| Past Projects 
+					span.text-muted Hackathon - VR and Tablet Network Integration
+				p.lead
+					| Joined a VR Hackathon with some of my programming friends at Centennial College. Worked with SmokeBomb Entertainment using Samasung Gear VR and Android phone/tablets
+					| Our game idea was based off of a dungeon crawler. The VR player can select tiles and form the map for the mobile player to run around and attack monsters.
+			.col-md-5.col-md-pull-7
+				img.featurette-image.img-responsive.center-block(src='../Assets/images/Hackathon.jpeg', alt='D&D', style="width:800px;height:500px" )
+		// /END THE FEATURETTES
+		include ../partials/footer.jade
 
-    h3 Single Web React and Redux 
-    p
 
-    h2 Past Projects
-
-    h3 Hackathon - VR and Tablet Network Integration
-    p 
 
 

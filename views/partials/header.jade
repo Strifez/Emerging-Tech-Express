@@ -1,7 +1,12 @@
-//Header
+// Header
+// Jason Huang 
+// Header file for all pages in My Website
+
+link(ref='stylesheet', href='../../public/Scripts/lib/font-awesome/less/icons.less')
+
 .navbar-wrapper
 		.container
-			nav.navbar.navbar-default.navbar-static-top.navbar-inverse-bg-primary(style="background-color: #e3f2fd")
+			nav.navbar.navbar-default.navbar-fixed-top.navbar-inverse-bg-primary(style="background-color: #e3f2fd")
 				.container
 					.navbar-header
 						button(type="button" ,class="navbar-toggle collapsed", data-toggle="collapse", data-target="#navbar" ,aria-expanded="false", aria-controls="navbar")
@@ -14,6 +19,7 @@
 					#navbar.navbar-collapse.collapse
 						ul.nav.navbar-nav
 							li
+								icon.fa.fa-home.fa-fw
 								a(href="/") Home
 							li
 								a(href="/about") About

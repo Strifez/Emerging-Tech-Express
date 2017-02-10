@@ -1,14 +1,19 @@
+// Index
+// Jason Huang 
+// Home page in My Website, using bootstrap Carousel
+
 extends ../../public/Scripts/lib/jade-bootstrap/_bootstrap.jade
 
 append styles
 	// Custom styles for this template 
 	link(rel='stylesheet', href='../../public/Scripts/lib/jade-boostrap/css/carousel.css')
 	link(rel='stylesheet', href='../../public/Scripts/lib/jade-bootstrap/css/navbar.css')
+
 block body
 	include ../partials/header.jade
 	// Carousel
 	// ==================================================
-	+carousel("myCarousel",[{image:"../Assets/images/boat-photo.jpg",h1:"Beautiful Places to go Camping",p:"Text",button:{caption:"Visit TRCA",url:"https://trca.ca/activities/camping/"}},{image:"../Assets/images/lake-photo.jpg",h1:"Lets Go Fishing!",p:"Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.",button:{caption:"Learn more",url:"#"}},	{image:"../Assets/images/snowflake.jpg",h1:"Snowflake",p:"Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.",button:{caption:"Browse gallery",url:"#"}}])
+	+carousel("myCarousel",[{image:"../Assets/images/boat-photo.jpg",h1:"Beautiful Places to go Camping",p:"I love to go Camping, Some places I recommend Earl Rowe, and The Lake of Two Rivers inside Algonquin Park",button:{caption:"Visit TRCA",url:"https://trca.ca/activities/camping/"}},{image:"../Assets/images/lake-photo.jpg",h1:"Lets Go Fishing!",p:"When I have time I would go fishing with my buddies"}])
 	//  Marketing messaging and featurettes
 	//  ==================================================
 	// Wrap the rest of the page in another container to center all the content.
@@ -16,7 +21,7 @@ block body
 		// Three columns of text below the carousel
 		.row
 			.col-lg-4
-				img.img-circle(src='../images/Sanic.png', alt='Jason', width='140', height='140')
+				img.img-circle(src='../Assets/images/Me.jpeg', alt='Jason', width='200', height='300')
 				h2 Welcome!!
 				p This is my personal site. 
 				p

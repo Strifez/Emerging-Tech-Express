@@ -1,3 +1,7 @@
+// App
+// Jason Huang 
+// Contains all the middleware, imports and error handlers
+
 //Include all of our middleware - internal and external modules
 let express = require('express');
 let path = require('path'); //part of node.js core
