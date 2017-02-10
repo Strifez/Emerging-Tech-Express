@@ -4,7 +4,30 @@ link(href="../public/Scripts/lib/jade-boostrap/css/carousel.css", rel="styleshee
 
 block body
     include ../partials/header.jade
-    h1 My Email 
-    p jason.huang11@hotmail.com
-    h1 My Phone Number
-    p 123-156-1555
+    .jumbotron
+        .container
+            h1 Contact Me
+            p
+                | Feel free to contact me for any questions or if you want to make a new friend. Everyone is welcome
+                p   | My Email: jason.huang11@hotmail.ca
+            //Contact Form   
+            div.content
+             form(action='/contact', name='contactus', id='contactus', method='post')
+                fieldset
+                p
+                    label(for='name') Name:
+                    br
+                    input(name='name', type='text', value='', id='name')
+                p
+                    label(for='email') Email:
+                    br
+                    input(name='email', type='text', value='', id='email')
+                p
+                    label(for='message') Message:
+                    br
+                    textarea(name='message', cols='40', rows='10', id='message')
+                p
+                    input(name='submit', type='submit', value='Send', id='submit')
+                    //a.btn.btn-primary.btn-lg(href='#', role='button') Learn more »
+        .container
+    include ../partials/footer.jade

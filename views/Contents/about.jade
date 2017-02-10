@@ -1,38 +1,44 @@
 extends ../../public/Scripts/lib/jade-bootstrap/_bootstrap.jade
-
+//CSS
 link(href="../public/Scripts/lib/jade-boostrap/css/carousel.css", rel="stylesheet")
 
 block body
-  include ../partials/header.jade
-  h1  Morbi elementum, sapien sit amet vehicula tincidunt, lorem purus vehicula purus, ut tempor libero sem at orci.
-  section.css-table
-    section.two-column
-      section.cell
-        h2 Donec imperdiet
-        p Lorem ipsum dolar sit amet, cons incidunt ut labore et dolore magn trud exercitation ullamcorpor susc vel eum irure dolor in reprehende dolore eu fugiat nulla pariatur.
-        p At lupatum delenit aigue duos dolor tempor sunt in culpa qui officia d dereud facils est er expedit distinc peccand quaerer en imigent cupidat. Incita visset, accom ex robore ad quam vis vadisen vlavis confecs nis revinc tae. Ietm hae magnitu dine for super oper mari aggere. Oppidi his mowni bus suifs fortunis desp erate coe magno recipei ban ibi se rursus isdem opport unitel rursus isdem opport loci defen porti busi. Navigandi ad nunc. Que neque pedibus ipsorum, naves ad hunc mod arm aeque, erant fere situs oppi dorum ut facilus. Vada ac desussum aestus exipe aditurn habere ex alto.
-      section.cell
-        h2 Nunc sodales
-        p Lorem ipsum dolar sit amet, cons incidunt ut labore et dolore magn trud exercitation ullamcorpor susc vel eum irure dolor in reprehende dolore eu fugiat nulla pariatur.
-        p At lupatum delenit aigue duos dolor tempor sunt in culpa qui officia d dereud facils est er expedit distinc peccand quaerer en imigent cupidat. Incita visset, accom ex robore ad quam vis vadisen vlavis confecs nis revinc tae. Ietm hae magnitu dine for super oper mari aggere. Oppidi his mowni bus suifs fortunis desp erate coe magno recipei ban ibi se rursus isdem opport unitel rursus isdem opport loci defen porti busi. Navigandi ad nunc. Que neque pedibus ipsorum, naves ad hunc mod arm aeque, erant fere situs oppi dorum ut facilus. Vada ac desussum aestus exipe aditurn habere ex alto.
-      section.cell
-      h1 Name: Jason Huang
-      section.cell
-        h2 Education
-        p Currently in 5th Semester of Software Engineering- Interactive Gaming. I have a Bachelor of Science in Biology at Ryerson University
-      section.cell
-        h2 My Fav Games
-        p Soccer Spirits (Mobile Game)
-        <img src="Assets/images/ss_home.jpg" alt="Soccer Spirits" style="width:508px;height:285px;">
-
-    section.css-table
-    section.three-column
-      section.cell
-        h3 Etiam lobortis
-        p Lorem ipsum dolar sit amet, cons incidunt ut labore et dolore magn trud exercitation ullamcorpor susc vel eum irure dolor in reprehende dolore eu fugiat nulla pariatur.
-      section.cell
-        h3 Phasellus lacus
-        p Lorem ipsum dolar sit amet, cons incidunt ut labore et dolore magn trud exercitation ullamcorpor susc vel eum irure dolor in reprehende dolore eu fugiat nulla pariatur.
-      section.cell
-        h3 Aliquam vulputate
-        p Lorem ipsum dolar sit amet, cons incidunt ut labore et dolore magn trud exercitation ullamcorpor susc vel eum irure dolor in reprehende dolore eu fugiat nulla pariatur.
+	include ../partials/header.jade
+	section.css-table
+		section.two-column
+			section.cell
+		// START THE FEATURETTES
+		hr.featurette-divider
+		.row.featurette
+			.col-md-7
+				h1 About Me
+				h2.featurette-heading
+					| My Name is:
+					span.text-muted  Jason Huang
+				p.lead
+					| I am currently 25 years old. Born and raised in Canada. Nationality: Canadian, Ethnicity: Chinese
+			.col-md-5
+				img.featurette-image.img-responsive.center-block(src='../images/featurette1.jpg', alt='Jason')
+		hr.featurette-divider
+		.row.featurette
+			.col-md-7.col-md-push-5
+				h2.featurette-heading
+					| Education 
+					span.text-muted University + College
+				p.lead
+					| Currently in 5th Semester of Software Engineering- Interactive Gaming. I have a Bachelor of Science in Biology at Ryerson University.
+			.col-md-5.col-md-pull-7
+				img.featurette-image.img-responsive.center-block(src='../images/featurette2.jpg', alt='Generic placeholder image')
+		hr.featurette-divider
+		.row.featurette
+			.col-md-7
+				h2.featurette-heading
+					| My Hobbies:
+					span.text-muted  Games!! PCMR!!
+				p.lead
+					| I play all kinds of games and they vary from mobile to PC. The game I play the most is on mobile called Soccer Spirits. Other games I play are League Of Legends, Diablo 3, Overwatch, Undertale.
+			.col-md-5
+				img.featurette-image.img-responsive.center-block(src="Assets/images/ss_home.jpg" alt="Soccer Spirits" style="width:508px;height:285px;")
+		hr.featurette-divider
+		// /END THE FEATURETTES
+		include ../partials/footer.jade

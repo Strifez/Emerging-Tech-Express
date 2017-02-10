@@ -1,18 +1,9 @@
-//extends layout
-
-//block content
-	h1= title
-	p Welcome to #{title}
-	p The local time is #{date}
-
-
-
 extends ../../public/Scripts/lib/jade-bootstrap/_bootstrap.jade
 
 append styles
 	// Custom styles for this template 
-	link(href="../public/Scripts/lib/jade-boostrap/css/carousel.css", rel="stylesheet")
-	link(href='../public/Scripts/lib/jade-bootstrap/css/navbar.css', rel='stylesheet')
+	link(rel='stylesheet', href='../../public/Scripts/lib/jade-boostrap/css/carousel.css')
+	link(rel='stylesheet', href='../../public/Scripts/lib/jade-bootstrap/css/navbar.css')
 block body
 	include ../partials/header.jade
 	// Carousel
@@ -32,6 +23,7 @@ block body
 					a.btn.btn-default(href='/about', role='button') About Me! »
 
 	include ../partials/footer.jade
+
 
 
 

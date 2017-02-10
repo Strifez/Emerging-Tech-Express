@@ -5,6 +5,7 @@ let favicon = require('serve-favicon');
 let logger = require('morgan');
 let cookieParser = require('cookie-parser');
 let bodyParser = require('body-parser');
+let nodemailer = require('nodemailer');
 
 //import "mongoose"
 let mongoose = require('mongoose');
@@ -44,6 +45,40 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 //app.use('/about', about);
 //app.use('/users', users);
+
+//contact page
+
+app.get('/contact', index) 
+app.post('/contact', (req,res) => {
+  let mailOptions, mailerTrans;
+
+  mailerTrans = nodemailer.createTransport('Setup', {
+    service: 'Gmail',
+    auth: {
+      user: "polycistronix@gmail.com",
+      pass: "application-specific-password"
+    }
+  });
+
+  mailOptions = {
+    from: req.body.name + ' @lt;' + req.body.email + '@gt;',
+    to: 'me',
+    subject: 'Contact Form',
+    text: req.body.message
+  };
+
+  mailerTrans.sendMail(mailOptions, (error, response) => {
+    if (error)
+    {
+      res.render('contact', {title: 'Jason Huang - Contact Page', msg: 'Error Occured, message not sent', err: true, page: 'contact'})
+    }
+    else
+    {
+      res.render('contact', {title: 'Jason Huang - Contact Page', msg: 'Sent!', err: false, page: 'contact'})
+    }
+  });
+});
+
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
