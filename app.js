@@ -51,7 +51,7 @@ app.use('/', index);
 //app.use('/users', users);
 
 //contact page
-
+//source: https://blog.ragingflame.co.za/2012/6/28/simple-form-handling-with-express-and-nodemailer
 app.get('/contact', index) 
 app.post('/contact', (req,res) => {
   let mailOptions, mailerTrans;
@@ -60,7 +60,7 @@ app.post('/contact', (req,res) => {
     service: 'Gmail',
     auth: {
       user: "polycistronix@gmail.com",
-      pass: "application-specific-password"
+      pass: ""
     }
   });
 

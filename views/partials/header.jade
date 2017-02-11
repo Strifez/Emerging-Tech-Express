@@ -2,11 +2,14 @@
 // Jason Huang 
 // Header file for all pages in My Website
 
-link(ref='stylesheet', href='../../public/Scripts/lib/font-awesome/less/icons.less')
+link(ref='stylesheet', href='/Scripts/lib/font-awesome/css/font-awesome.css')
+link(ref='stylesheet', href='/Scripts/lib/font-awesome/css/font-awesome.min.css')
+link(ref='stylesheet', href='/Scripts/lib/font-awesome/less/icons.less')
+link(rel='stylesheet', href='/Scripts/lib/jade-bootstrap/css/navbar.css')
 
 .navbar-wrapper
 		.container
-			nav.navbar.navbar-default.navbar-fixed-top.navbar-inverse-bg-primary(style="background-color: #e3f2fd")
+			nav.navbar.navbar-default.navbar-fixed-top.navbar-inverse-bg-primary
 				.container
 					.navbar-header
 						button(type="button" ,class="navbar-toggle collapsed", data-toggle="collapse", data-target="#navbar" ,aria-expanded="false", aria-controls="navbar")
@@ -14,19 +17,18 @@ link(ref='stylesheet', href='../../public/Scripts/lib/font-awesome/less/icons.le
 							span.icon-bar
 							span.icon-bar
 							span.icon-bar
-							
+
 						a(class="navbar-brand", href="/") Jason Huang
 					#navbar.navbar-collapse.collapse
 						ul.nav.navbar-nav
 							li
-								icon.fa.fa-home.fa-fw
-								a(href="/") Home
+								a(href="/") Home 
 							li
 								a(href="/about") About
-							li
-								a(href="/contact") Contact
 							li
 								a(href="/project") Projects
 							li
 								a(href="/services") Services
+							li
+								a(href="/contact") Contact
 							

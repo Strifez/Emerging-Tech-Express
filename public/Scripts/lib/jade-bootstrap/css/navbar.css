@@ -1,6 +1,10 @@
 body {
-  padding-top: 20px;
+  padding-top: 50px;
   padding-bottom: 20px;
+}
+
+h5{
+    color: black;
 }
 
 .navbar {
@@ -8,14 +12,18 @@ body {
 }
 
 .navbar-default{
-    background-color: red;
+    background-color:lightskyblue;
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: teal;
+    color: black;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     background-color: #E7E7E7;
     color: #555555;
+}
+
+.navbar-default .navbar-brand {
+    color: black;
 }
