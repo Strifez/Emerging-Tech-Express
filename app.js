@@ -15,8 +15,8 @@ let nodemailer = require('nodemailer');
 let mongoose = require('mongoose');
 
 //URI
-let URI = "mongodb://localhost/videogames";
-//let URI = "mongodb://Jason:123456@ds011158.mlab.com:11158/videogames";
+//let URI = "mongodb://localhost/videogames";
+let URI = "mongodb://Jason:123456@ds011158.mlab.com:11158/videogames";
 
 mongoose.connect(URI,(err)=> {
   if(err)
