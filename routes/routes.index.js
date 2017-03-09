@@ -43,8 +43,8 @@ router.get('/contact', (req, res) => {
   });
 });
 
-exports.contact = (req, res) => {
+/*exports.contact = (req, res) => {
   res.render('contact', {title: 'Jason Huang - Contact Page', page: 'contact'})
-};
+};*/
 
 module.exports = router;

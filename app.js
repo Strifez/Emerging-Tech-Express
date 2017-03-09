@@ -15,8 +15,8 @@ let nodemailer = require('nodemailer');
 let mongoose = require('mongoose');
 
 //URI
-//let URI = "mongodb://localhost/videogames";
-let URI = "mongodb://Jason:123456@ds011158.mlab.com:11158/videogames";
+let URI = "mongodb://localhost/videogames";
+//let URI = "mongodb://Jason:123456@ds011158.mlab.com:11158/videogames";
 
 mongoose.connect(URI,(err)=> {
   if(err)
@@ -52,8 +52,8 @@ app.use('/', index);
 
 //contact page
 //source: https://blog.ragingflame.co.za/2012/6/28/simple-form-handling-with-express-and-nodemailer
-app.get('/contact', index) 
-app.post('/contact', (req,res) => {
+//app.get('/contact', index) 
+/*app.post('/contact', (req,res) => {
   let mailOptions, mailerTrans;
 
   mailerTrans = nodemailer.createTransport('Setup', {
@@ -81,7 +81,7 @@ app.post('/contact', (req,res) => {
       res.render('contact', {title: 'Jason Huang - Contact Page', msg: 'Sent!', err: false, page: 'contact'})
     }
   });
-});
+});*/
 
 
 // catch 404 and forward to error handler
